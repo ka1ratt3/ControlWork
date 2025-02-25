@@ -1,4 +1,5 @@
 # Инкапсуляция
+
 class Person:
     def __init__(self):
         self._age = 0  # Начальное значение возраста
@@ -22,6 +23,7 @@ p.set_age(-5)
 
 
 # Наследование
+
 class Animal:
     def __init__(self, name):
         self.name = name
@@ -40,7 +42,6 @@ class Cat(Animal):
         return "Meow"
 
 
-# Пример использования
 dog = Dog("Buddy")
 cat = Cat("Kitty")
 
@@ -72,17 +73,17 @@ def move(vehicle):
     return vehicle.move()
 
 
-# Пример использования
+
 car = Car()
 bike = Bicycle()
 
-print(move(car))  # Вывод: Car is driving
-print(move(bike))  # Вывод: Bicycle is pedaling
+print(move(car))
+print(move(bike))
 
 
 
 
-
+# Абстракция
 
 from abc import ABC, abstractmethod
 import math
@@ -111,7 +112,7 @@ class Circle(Shape):
         return math.pi * (self.radius ** 2)
 
 
-# Пример использования
+
 rect = Rectangle(10, 5)
 circle = Circle(7)
 
